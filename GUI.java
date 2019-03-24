@@ -6,7 +6,6 @@
 
 package tic.tac.toe;
 
-import java.awt.Color;
 import javax.swing.JButton;
 
 /**
@@ -205,9 +204,9 @@ public class GUI extends javax.swing.JFrame {
         setForeground(new java.awt.Color(51, 0, 51));
         setPreferredSize(new java.awt.Dimension(850, 467));
 
-        jLabel1.setFont(new java.awt.Font("Tahoma", 1, 48)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(102, 0, 51));
-        jLabel1.setText("Tic-Tac-Toe");
+        jLabel1.setText("Tic-Tac-Toe by Rabiya Adnan");
 
         J11.setBackground(new java.awt.Color(153, 153, 153));
         J11.setFont(new java.awt.Font("Tahoma", 1, 48)); // NOI18N
@@ -354,8 +353,8 @@ public class GUI extends javax.swing.JFrame {
                         .addComponent(JResetButton)))
                 .addGap(475, 475, 475))
             .addGroup(layout.createSequentialGroup()
-                .addGap(102, 102, 102)
-                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 313, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(57, 57, 57)
+                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 392, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
@@ -385,7 +384,7 @@ public class GUI extends javax.swing.JFrame {
                             .addComponent(J31, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(J32, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(J33, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(0, 54, Short.MAX_VALUE))
+                        .addGap(0, 83, Short.MAX_VALUE))
                     .addGroup(layout.createSequentialGroup()
                         .addComponent(JInValidMove, javax.swing.GroupLayout.PREFERRED_SIZE, 47, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
@@ -444,6 +443,7 @@ public class GUI extends javax.swing.JFrame {
     private void JResetButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_JResetButtonActionPerformed
         // TODO add your handling code here:
         model.endGame(this);
+        reset();
         JDisplayMessage.setText("");
     }//GEN-LAST:event_JResetButtonActionPerformed
 

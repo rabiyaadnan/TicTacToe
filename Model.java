@@ -150,6 +150,6 @@ public class Model
             }
         }
         
-        gui.reset();
+        //gui.reset();
     }
 }
